@@ -60,5 +60,35 @@ CREATE TABLE BOOKING (
 );
 
 
-SELECT *
-FROM INFORMATION_SCHEMA.TABLES
+INSERT INTO TOUR (TourName, Description) VALUES ('North', 'Tour of wineries and outlets of the Bedigo and Castlemaine region');
+INSERT INTO TOUR (TourName, Description) VALUES ('South', 'Tour of wineries and outlets of Mornington Penisula');
+INSERT INTO TOUR (TourName, Description) VALUES ('West', 'Tour of wineries and outlets of the Geelong and Otways region');
+
+INSERT INTO CLIENT (ClientID, Surname, GivenName, Gender) VALUES (1, 'Price', 'Taylor', 'M');
+INSERT INTO CLIENT (ClientID, Surname, GivenName, Gender) VALUES (2, 'Gamble', 'Ellyse', 'F');
+INSERT INTO CLIENT (ClientID, Surname, GivenName, Gender) VALUES (3, 'Tan', 'Tilly', 'F');
+INSERT INTO CLIENT (ClientID, Surname, GivenName, Gender) VALUES (103620582, 'Ambrose', 'Joy', 'F');
+
+INSERT INTO EVENT (TourName, EventYear, EventMonth, EventDay, EventFee) VALUES ('North', 2016, 'Jan', 9, 200);
+INSERT INTO EVENT (TourName, EventYear, EventMonth, EventDay, EventFee) VALUES ('North', 2016, 'Feb', 13, 225);
+INSERT INTO EVENT (TourName, EventYear, EventMonth, EventDay, EventFee) VALUES ('South', 2016, 'Jan', 9, 200);
+INSERT INTO EVENT (TourName, EventYear, EventMonth, EventDay, EventFee) VALUES ('South', 2016, 'Jan', 16, 200);
+INSERT INTO EVENT (TourName, EventYear, EventMonth, EventDay, EventFee) VALUES ('West', 2016, 'Jan', 29, 225);
+
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (1, 'North', 'Jan', 9, 2016, 200, '2015-12-10');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (2, 'North', 'Jan', 9, 2016, 200, '2015-12-16');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (1, 'North', 'Feb', 13, 2016, 225, '2016-01-08');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (2, 'North', 'Feb', 13, 2916, 125, '2016-01-14');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (3, 'North', 'Feb', 13, 2016, 225, '2016-02-03');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (1, 'South', 'Jan', 9, 2016, 200, '2015-12-10');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (2, 'South', 'Jan', 16, 2016, 200, '2015-12-18');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (3, 'South', 'Jan', 16, 2016, 200, '2016-01-09');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (2, 'West', 'Jan', 29, 2016, 225, '2015-12-17');
+INSERT INTO BOOKING (ClientID, TourName, EventMonth, EventDay, EventYear, Payment, DateBooked) VALUES (3, 'West', 'Jan', 29, 2016, 200, '2015-12-18');
+
+SELECT * 
+from CLIENT
+
+
+
+
